@@ -25,9 +25,8 @@ else:
 
 # run data though doc = if input line - value of key on doc , print key (key-value pairs)
 
-#print possible illnesses, matches
+#if yes match than they are sick and search data base to find what they have
 
 #if no match, print they are healthy, UNLESS 1 variable is not in range, then suggest nmedical profesisonal 
-
 
 
