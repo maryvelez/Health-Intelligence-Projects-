@@ -17,7 +17,7 @@ with open("choose_your_own_adventure-token.json") as f:
 CLIENT_ID = secrets["clientId"]
 CLIENT_SECRET = secrets["secret"]
 ASTRA_DB_KEYSPACE = "database"
-OPENAI_API_KEY="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"
+OPENAI_API_KEY="***DELTED"
 
 auth_provider = PlainTextAuthProvider(CLIENT_ID, CLIENT_SECRET)
 cluster = Cluster(cloud=cloud_config, auth_provider=auth_provider)
