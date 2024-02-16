@@ -2,7 +2,7 @@
 
 #Define any variables / get input from user
 #temp
-temp = int(input("What is your temp?: "))
+temp = int(input("What is your temp? (in celcius): "))
 if temp > (37.3):
      print("You have a fever")
 else:
