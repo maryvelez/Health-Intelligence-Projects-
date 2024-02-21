@@ -15,4 +15,3 @@ quiz_data = [
         "answer": "mass can be converted to energy"
     }
 ]
-print(quiz_data)
