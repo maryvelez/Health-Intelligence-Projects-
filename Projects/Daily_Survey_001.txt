@@ -1,0 +1,194 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset = "UTF-8">
+    <title>Mary Daily Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dhurjati&display=swap" rel="stylesheet">
+    
+    </head>
+
+  <body>
+    <h1 id = "title">Check Out Daily Survey Form</h1>
+    <p id = "description">Please fill out everything, every single day.</p>
+    <form method="post" id="survey-form" action='https://register-demo.freecodecamp.org'>
+
+<fieldset>
+        <label for="first-name" id = "name-label" >Enter Your First Name: <input type="text" id="name" placeholder="Write your name."  name="first-name" required>
+        </label>
+        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required />
+          <label for="email" id = "email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="Write your email." required /></label>
+                  
+  <label for="age">Input your age (years): <input id="age" type="number" name="age" min = "10" max:"120" />
+  </label>
+        <label for="number" id = "number-label">Enter Your Phone Number: <input type="number" id="number"  name="number" min="11" max="14" placeholder="Write your number."  required>
+        </label>
+
+
+<label>Did you talk to at least one person?<input type="radio" name="person-new" class="inline" value="1">Yes</label>
+          <label><input type="radio" name="person-new" class="inline" value="2">No</label>
+          <label><input type="radio" name="person-new" class="inline" value="3">I will.</label>
+
+ <label>How did you feel today?
+          <select id="dropdown">
+            <option value=""(Select One)>Select how you are feeling</option>
+            <option value="1">1-awful</option>
+       <option value="2">2-not the best</option>
+       <option value="3">3-okay</option>
+       <option value="4">4-good</option>
+       <option value="5">5-amazing</option>
+       </select></label>
+
+
+<label>Would you say today was productive? (required)<input type="radio" name="productive" class="inline" value="1">Yes</label>
+          <label><input type="radio" name="productive" class="inline" value="2">No</label>
+
+
+ <label>What did I focus on today academically? 
+          <select id="dropdown">
+            <option value=""(Select One)>Select how what you focused on today.</option>
+<option value="1">Math</option>
+         <option value="2">Physics</option>
+         <option value="3">Coding</option>
+         <option value="4">Data Science</option>
+
+       </select></label>
+
+ 
+
+ <label for="could">What is something I could have done differently today?
+          <textarea id="could" name="could" rows="1" cols="30" placeholder="I could have talked to that person; learned that..."></textarea>
+        </label>
+        
+<label for="goals">What are my goals for tomorrow?
+          <textarea id="goals" name="goals" rows="1" cols="50" placeholder="I will go to the gym; start that course..."></textarea>
+        </label>
+
+<legend>I promise to get 1% better tomorrow:</legend>
+
+  <div>
+    <input type="checkbox" id="yes-b" name="yes-b" value = "yes-b" checked />
+    <label for="yes-b">Yes</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="no-b" value = "no-b" name="no-b" />
+    <label for="no-b">No</label>
+  </div>
+
+
+<legend>I verify that everything I wrote here is true and accurate:</legend>
+
+  <div>
+    <input type="checkbox" id="yes-v" name="yes-v" value = "yes-v" checked />
+    <label for="yes-v">Yes</label>
+  </div>
+
+  <div>
+    <input type="checkbox" id="no-v" value = "no-b" name="no-v" />
+    <label for="no-v">No</label>
+  </div>
+        
+
+ <input type="submit" value="Submit" id = "submit" />
+
+  </fieldset>
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #C2C6A7;
+  color: #270722;
+   font-family: "Dhurjati", sans-serif;
+  font-weight: 400;
+  font-style: normal
+
+}
+
+h1,p {
+  margin:1em auto;
+  text-align:center;
+   color: #14453D;
+}
+
+form {
+  width: 100vw;
+  max-width:500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+
+}
+
+fieldset {
+  border: none;
+  padding: 0.1rem 0;
+  /*border-top: 3px
+  solid #5A464C */
+  
+}
+
+label {
+  display:block;
+  margin: 0.1rem 0;
+}
+
+input, textarea,select {
+  margin: 0.1px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+
+input, textarea {
+  background-color: #646F4B;
+  border: 6px solid #646F4B;
+  color: #ffffff;
+}
+
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: em;
+  font-size: 1.1rem;
+  background-color: #14453D;
+  border-color:#14453D;
+  min-width: 300px;
+  border-radius: 5px
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+}
+
+.inline{
+  display: inline; 
+}
+::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+
+** end of undefined **
+
